@@ -8,8 +8,8 @@ We can write the recursive relation as
 
 <img src="http://latex.codecogs.com/gif.latex?s_{n+2}=s_{n+1}+s_n+s_{n-1}"/>
 
-which is equivalent to the matrix relation
+which is equivalent to the matrix relation <img src="http://latex.codecogs.com/gif.latex?S_{n}=A{\cdot}S_{n-1}"/> where
 
-/////
+<img src="http://latex.codecogs.com/gif.latex?S_{n}=\left(\begin{array}{c}a_{n}\\a_{n+1}\\a_{n+2}\end{array}\right),A=\left(\begin{array}{ccc}0&1&0\\0&0&1\\1&1&1\end{array}\right)"/>
 
-<img src="http://latex.codecogs.com/gif.latex?a_{n+1}=\frac{a_n+\frac{x}{a_n}}{2}."/>
+By induction, <img src="http://latex.codecogs.com/gif.latex?S_{n}=A^n{\cdot}S_0"/>, where can be calculated using [Exponentiation by squaring](https://en.wikipedia.org/wiki/Exponentiation_by_squaring).
